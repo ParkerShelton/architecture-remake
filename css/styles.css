@@ -1,0 +1,429 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */ }
+
+body {
+  background-color: #000; }
+
+@font-face {
+  font-family: 'AUdimat-Italic';
+  src: url("../fonts/AUdimat-Italic.ttf"); }
+
+@font-face {
+  font-family: 'DPSDbeyond';
+  src: url("../fonts/DPSDbeyond.otf"); }
+
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  src: url("../fonts/SourceSansPro-Light.ttf"); }
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url("../fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url("../fonts/SourceSansPro-Bold.ttf"); }
+
+/* ####### */
+/* ------- */
+/*  |-- LAYOUT --|
+
+  - HEADER
+  - MAIN CONTENT
+    - LEFT COLUMN
+      - crwon house
+      - news
+      - urban angles
+      - about
+    
+    - RIGHT COLUMN
+      - apartment
+      - villa
+
+      - BOTTOM SECTION
+        - LEFT HALF
+          - coimbra
+          - loading image
+
+        - RIGHT HALF 
+          - contact
+          - visang
+  - FOOTER
+*/
+.fullPageBG {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #242e2d; }
+  .fullPageBG .fullBG {
+    position: absolute;
+    width: 100%; }
+  .fullPageBG .pageContainer {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-top: 9.4%;
+    background-color: #fff;
+    /* ################################################## */
+    /* ################################################## */
+    /* ################################################## */
+    /* ################################################## */ }
+    .fullPageBG .pageContainer .heroImg {
+      position: absolute;
+      width: 100%; }
+    .fullPageBG .pageContainer header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      margin: auto;
+      margin-top: 55px; }
+      .fullPageBG .pageContainer header .hamburger {
+        width: 78px;
+        height: 22px;
+        margin-top: 8px;
+        margin-bottom: 26px; }
+        .fullPageBG .pageContainer header .hamburger .line1 {
+          width: 24px;
+          height: 2px;
+          background-color: #242e2d; }
+        .fullPageBG .pageContainer header .hamburger .line2 {
+          width: 12px;
+          height: 2px;
+          margin-top: 8px;
+          background-color: #242e2d; }
+        .fullPageBG .pageContainer header .hamburger .line3 {
+          width: 16px;
+          height: 2px;
+          margin-top: 8px;
+          background-color: #242e2d; }
+      .fullPageBG .pageContainer header .search {
+        margin-top: 5px;
+        align-self: flex-start; }
+    .fullPageBG .pageContainer .mainContainer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      height: 100%;
+      margin: auto;
+      margin-top: 132px; }
+      .fullPageBG .pageContainer .mainContainer .leftColumn {
+        width: 31.6%; }
+        .fullPageBG .pageContainer .mainContainer .leftColumn h1 {
+          font-family: "DPSDbeyond";
+          font-size: 50px;
+          line-height: 64px; }
+        .fullPageBG .pageContainer .mainContainer .leftColumn .background {
+          width: 100%;
+          height: 80%;
+          margin-top: 180px;
+          background-color: #fff;
+          overflow: hidden; }
+          .fullPageBG .pageContainer .mainContainer .leftColumn .background .crownHouse {
+            width: 88%;
+            margin: auto;
+            margin-top: 18px; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .crownHouse img {
+              width: 100%; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .crownHouse h2 {
+              width: 100%;
+              margin-top: 48px;
+              font-size: 28px;
+              font-family: "DPSDbeyond";
+              text-align: center;
+              color: #242e2d; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .crownHouse p {
+              width: 100%;
+              margin-top: 9px;
+              text-align: center;
+              font-size: 15px;
+              color: #9b9b9b; }
+          .fullPageBG .pageContainer .mainContainer .leftColumn .background .news {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            width: 88%;
+            margin: auto;
+            margin-top: 58px;
+            background-color: #74A9CA; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .news .newsImg {
+              position: absolute;
+              background-color: #74A9CA;
+              width: 100%; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .news .newsTitle {
+              position: absolute;
+              margin-top: 30%; }
+          .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 88%;
+            margin: auto;
+            margin-top: 352px; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles .morePhotosContainer {
+              position: absolute;
+              width: 45%;
+              align-self: center;
+              margin: auto;
+              margin-top: 50%; }
+              .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles .morePhotosContainer p {
+                width: 80%;
+                color: #fff;
+                font-size: 15px;
+                text-align: center;
+                line-height: 23px;
+                font-family: "SourceSansPro-Light"; }
+              .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles .morePhotosContainer button {
+                width: 100%;
+                height: 42px;
+                font-family: "AUdimat";
+                font-size: 18px;
+                margin-top: 7px;
+                background-color: rgba(0, 0, 0, 0);
+                border: 2px solid #fff;
+                color: #fff; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles img {
+              width: 100%;
+              background-color: #0B0F0F; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles h2 {
+              width: 100%;
+              margin-top: 35px;
+              text-align: center;
+              font-size: 28px;
+              font-family: "DPSDbeyond";
+              color: #242e2d; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .urbanAngles p {
+              width: 40%;
+              margin: auto;
+              margin-top: 15px;
+              text-align: center;
+              font-size: 15px;
+              font-family: "SourceSansPro-Light";
+              color: #9b9b9b; }
+          .fullPageBG .pageContainer .mainContainer .leftColumn .background .about {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 88%;
+            margin: auto;
+            margin-top: 30px; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .about .aboutImg {
+              position: absolute;
+              width: 100%;
+              background-color: #D87979; }
+            .fullPageBG .pageContainer .mainContainer .leftColumn .background .about .aboutTitle {
+              position: absolute;
+              margin-top: 35%; }
+      .fullPageBG .pageContainer .mainContainer .rightColumn {
+        width: 65.4%;
+        height: 100%;
+        background-color: #fff; }
+        .fullPageBG .pageContainer .mainContainer .rightColumn .apartment {
+          position: relative;
+          width: 94%;
+          height: 100%;
+          margin: auto;
+          margin-top: 20px;
+          object-fit: cover; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .apartmentImg {
+            width: 100%;
+            object-fit: cover;
+            height: 100%; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 160px;
+            bottom: 0; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .whiteBox {
+              width: 52%;
+              height: 100%;
+              bottom: 0;
+              background-color: #fff; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .whiteBox h2 {
+                font-size: 32px;
+                font-family: "DPSDbeyond";
+                margin-top: 26px;
+                color: #242e2d; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .whiteBox p {
+                font-size: 15px;
+                font-family: "SourceSansPro-Light";
+                color: #9b9b9b; }
+                .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .whiteBox p:nth-of-type(1) {
+                  margin-top: 26px; }
+                .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .whiteBox p:nth-of-type(2) {
+                  margin-top: 6px;
+                  margin-bottom: 3px; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .blackBox {
+              width: 48%;
+              height: 100%;
+              background-color: #000; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .apartment .infoContainer .blackBox p {
+                width: 80%;
+                margin: auto;
+                margin-top: 26px;
+                font-size: 15px;
+                font-family: "SourceSansPro-Light";
+                line-height: 24px;
+                color: #fff; }
+        .fullPageBG .pageContainer .mainContainer .rightColumn .villa {
+          position: relative;
+          width: 94%;
+          margin: auto;
+          margin-top: 60px; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .villa img {
+            width: 100%; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .villa .infoContainer {
+            position: absolute;
+            width: 54%;
+            background-color: #fff;
+            bottom: 0; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .villa .infoContainer h2 {
+              font-size: 28px;
+              line-height: 38px;
+              font-family: "DPSDbeyond";
+              margin-top: 34px;
+              color: #242e2d; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .villa .infoContainer p {
+              font-size: 15px;
+              font-family: "SourceSansPro-Light";
+              margin-top: 10px;
+              margin-bottom: 11px;
+              color: #9b9b9b; }
+        .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection {
+          display: flex;
+          justify-content: space-between;
+          width: 94%;
+          margin: auto;
+          margin-top: 61px; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .leftHalf {
+            width: 45%; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .leftHalf .coimbra {
+              width: 100%; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .leftHalf .coimbra img {
+                width: 100%; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .leftHalf .coimbra h2 {
+                width: 100%;
+                font-size: 25px;
+                font-family: "DPSDbeyond";
+                line-height: 38px;
+                text-align: center;
+                color: #242e2d; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .leftHalf .coimbra p {
+                width: 100%;
+                margin-top: 15px;
+                text-align: center;
+                font-size: 15px;
+                font-family: "SourceSansPro-Light";
+                color: #9b9b9b; }
+          .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf {
+            width: 45%; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .contact {
+              width: 100%;
+              background-color: #9AD4D2; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .contact .infoContainer {
+                position: relative; }
+                .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .contact .infoContainer .title {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  height: 100%; }
+                  .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .contact .infoContainer .title img {
+                    position: absolute;
+                    width: 65%;
+                    margin-top: 30%; }
+                .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .contact .infoContainer .contactBG {
+                  width: 100%; }
+            .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .visang {
+              width: 100%;
+              margin-top: 61px; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .visang img {
+                width: 100%; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .visang h2 {
+                width: 100%;
+                margin-top: 35px;
+                font-size: 28px;
+                font-family: "DPSDbeyond";
+                text-align: center;
+                color: #242e2d; }
+              .fullPageBG .pageContainer .mainContainer .rightColumn .bottomSection .rightHalf .visang p {
+                width: 100%;
+                margin-top: 16px;
+                font-size: 15px;
+                font-family: "SourceSansPro-Light";
+                text-align: center;
+                color: #9b9b9b; }
+    .fullPageBG .pageContainer .loadingContainer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 73px; }
+    .fullPageBG .pageContainer footer {
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      margin: auto;
+      margin-top: 106px;
+      margin-bottom: 58px;
+      border-top: 1px solid #979797; }
+      .fullPageBG .pageContainer footer ul {
+        display: flex;
+        justify-content: space-between;
+        width: 23%;
+        margin-left: 73px;
+        margin-top: 54px; }
+        .fullPageBG .pageContainer footer ul li {
+          align-self: center;
+          font-family: "SourceSansPro-Bold";
+          font-size: 12px; }
+      .fullPageBG .pageContainer footer img {
+        align-self: flex-end;
+        width: 4%;
+        height: 100%; }

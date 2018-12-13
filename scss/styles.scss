@@ -1,0 +1,530 @@
+@import './globals.scss';
+//////////////////////////////////////
+//              GUIDE:              //
+
+//- MAIN SECTION = /* ####### */
+                   //  title
+                   /* ####### */
+
+//- SUB SECTION = /* ------- */
+                  //  title
+                  /* ------- */
+
+//- INDIVIDUAL CONTENT = /* --- title --- */
+
+
+/*  |-- LAYOUT --|
+
+  - HEADER
+  - MAIN CONTENT
+    - LEFT COLUMN
+      - crwon house
+      - news
+      - urban angles
+      - about
+    
+    - RIGHT COLUMN
+      - apartment
+      - villa
+
+      - BOTTOM SECTION
+        - LEFT HALF
+          - coimbra
+          - loading image
+
+        - RIGHT HALF 
+          - contact
+          - visang
+  - FOOTER
+*/  
+//////////////////////////////////////
+
+.fullPageBG {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #242e2d;
+  // overflow: hidden;
+
+  .fullBG {
+    position: absolute;
+    width: 100%;
+  }
+
+  .pageContainer {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-top: 9.4%;
+    background-color: $white;
+    // overflow: hidden;
+
+    .heroImg {
+      position: absolute;
+      width: 100%;
+    }
+
+  /* ################################################## */
+  //                      HEADER
+  /* ################################################## */
+    header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      // height: 2%;
+      margin: auto;
+      margin-top: 55px;
+      // background-color: yellow;
+
+      .hamburger {
+        width: 78px;
+        height: 22px;
+        margin-top: 8px;
+        margin-bottom: 26px;
+        // background-color: red;
+
+        .line1 {
+          width: 24px;
+          height: 2px;
+          background-color: $title;
+        }
+        .line2 {
+          width: 12px;
+          height: 2px;
+          margin-top: 8px;
+          background-color: $title;        
+        }
+        .line3 {
+          width: 16px;
+          height: 2px;
+          margin-top: 8px;
+          background-color: $title;        
+        }      
+      }
+
+      .headerLogo {
+        // background-color: blue;  
+      }
+
+      .search {
+        margin-top: 5px;
+        align-self: flex-start;
+      }
+    }
+
+
+  /* ################################################## */
+  //                   MAIN CONTENT
+  /* ################################################## */
+
+    .mainContainer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      height: 100%;
+      margin: auto;
+      margin-top: 132px;
+      // overflow: hidden;
+      // background-color: blue;  
+
+      .leftColumn {
+        width: 31.6%;
+
+        h1 {
+          font-family: $dpsd;
+          font-size: 50px;
+          line-height: 64px;
+        }
+
+        .background {
+          width: 100%;
+          height: 80%;
+          margin-top: 180px;
+          background-color: $white;
+          overflow: hidden;
+
+          .crownHouse {
+            width: 88%;
+            margin: auto;
+            margin-top: 18px;
+
+            img {
+              width: 100%;
+            }
+
+            h2 {
+              width: 100%;
+              margin-top: 48px;
+              font-size: 28px;
+              font-family: $dpsd;
+              text-align: center;
+              color: $title;
+            }
+
+            p {
+              width: 100%;
+              margin-top: 9px;
+              text-align: center;
+              font-size: 15px;
+              color: $desc;
+            }
+          }
+
+          .news {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            width: 88%;
+            margin: auto;
+            margin-top: 58px;          
+            background-color: #74A9CA;
+
+            .newsImg {
+              position: absolute;
+              background-color: #74A9CA;
+              width: 100%;
+            }
+
+            .newsTitle {
+              position: absolute;
+              margin-top: 30%;
+
+            }
+          }
+
+          .urbanAngles {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 88%;
+            margin: auto;
+            margin-top: 352px;
+
+            .morePhotosContainer {
+              position: absolute;
+              width: 45%;
+              align-self: center;
+              margin: auto;
+              margin-top: 50%;
+
+              p {
+                width: 80%;
+                color: $white;
+                font-size: 15px;
+                text-align: center;
+                line-height: 23px;
+                font-family: $sspLight;
+              }
+
+              button {
+                width: 100%;
+                height: 42px;
+                font-family: $aud;
+                font-size: 18px;
+                margin-top: 7px;
+                background-color: rgba(0, 0, 0, 0);
+                border: 2px solid #fff;
+                color: #fff;
+              }
+            }
+
+            img {
+              width: 100%;
+              background-color: #0B0F0F;
+            }
+
+            h2 {
+              width: 100%;
+              margin-top: 35px;
+              text-align: center;
+              font-size: 28px;
+              font-family: $dpsd;
+              color: $title;
+            }
+
+            p {
+              width: 40%;
+              margin: auto;
+              margin-top: 15px;
+              text-align: center;
+              font-size: 15px;
+              font-family: $sspLight;
+              color: $desc;
+            }
+          }
+
+          .about {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 88%;
+            margin: auto;
+            margin-top: 30px;
+
+            .aboutImg {
+              position: absolute;
+              width: 100%;
+              background-color: #D87979;
+            }
+
+            .aboutTitle {
+              position: absolute;
+              margin-top: 35%
+            }
+          }
+        }
+      }
+
+      .rightColumn {
+        width: 65.4%;
+        height: 100%;
+        background-color: $white;
+
+        .apartment {
+          position: relative;
+          width: 94%;
+          height: 100%;
+          margin: auto;
+          margin-top: 20px;
+          object-fit: cover;
+
+          .apartmentImg {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }          
+
+          .infoContainer {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            // height: 100%;
+            height: 160px;
+            bottom: 0;
+            
+            .whiteBox {
+              // position: absolute;
+              width: 52%;
+              height: 100%;
+              bottom: 0;
+              background-color: $white;
+
+              h2 {
+                font-size: 32px;
+                font-family: $dpsd;
+                margin-top: 26px;
+                color: $title;
+              }
+
+              p {
+                font-size: 15px;
+                font-family: $sspLight;
+                color: $desc;
+
+                &:nth-of-type(1) {
+                  margin-top: 26px;
+                }
+                &:nth-of-type(2) {
+                  margin-top: 6px;
+                  margin-bottom: 3px;
+                }                
+              }
+            }
+
+            .blackBox {
+              width: 48%;
+              height: 100%;
+              background-color: #000;
+
+              p {
+                width: 80%;
+                margin: auto;
+                margin-top: 26px;
+                font-size: 15px;
+                font-family: $sspLight;
+                line-height: 24px;
+                color: $white;
+              }
+            }
+          }
+        }
+
+        .villa {
+          position: relative;
+          width: 94%;
+          margin: auto;
+          margin-top: 60px;
+          
+
+          img { 
+            width: 100%;
+          }
+
+          .infoContainer {
+            position: absolute;
+            width: 54%;
+            background-color: $white;
+            bottom: 0;
+
+            h2 {
+              font-size: 28px;
+              line-height: 38px;
+              font-family: $dpsd;
+              margin-top: 34px;
+              color: $title;
+            }
+
+            p {
+              font-size: 15px;
+              font-family: $sspLight;
+              margin-top: 10px;   
+              margin-bottom: 11px;           
+              color: $desc;
+            }
+          }
+        }
+
+        .bottomSection {
+          display: flex;
+          justify-content: space-between;
+          width: 94%;
+          margin: auto;
+          margin-top: 61px;
+
+          .leftHalf {
+            width: 45%;
+            // background-color: blue;
+
+            ////////////////////////////////COIMBRA 
+            .coimbra {
+              width: 100%;
+
+              img {
+                width: 100%;
+              }
+
+              h2 {
+                width: 100%;
+                font-size: 25px;
+                font-family: $dpsd;
+                line-height: 38px;
+                text-align: center;
+                color: $title;
+              }
+
+              p {
+                width: 100%;
+                margin-top: 15px;
+                text-align: center;
+                font-size: 15px;
+                font-family: $sspLight;
+                color: $desc;
+              }
+            }
+          }
+
+          .rightHalf {
+            width: 45%;
+            // background-color: red;
+
+            .contact {
+              width: 100%;
+              background-color: #9AD4D2;
+
+              .infoContainer {
+                // display: flex;
+                position: relative;
+
+                .title {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  height: 100%;
+                  // background-color: blue;
+
+                  img {
+                    position: absolute;
+                    width: 65%;
+                    margin-top: 30%;
+                  }
+                }
+
+                .contactBG {
+                  width: 100%;
+                }
+              }
+            }
+
+            .visang {
+              width: 100%;
+              margin-top: 61px;
+
+              img {
+                width: 100%;
+              }
+
+              h2 {
+                width: 100%;
+                margin-top: 35px;
+                font-size: 28px;
+                font-family: $dpsd;
+                text-align: center;
+                color: $title;
+              }
+
+              p {
+                width: 100%;
+                margin-top: 16px;
+                font-size: 15px;
+                font-family: $sspLight;
+                text-align: center;
+                color: $desc;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .loadingContainer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 73px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      width: 86.8%;
+      margin: auto;
+      margin-top: 106px;
+      margin-bottom: 58px;
+      border-top: 1px solid #979797;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 23%;
+        margin-left: 73px;
+        margin-top: 54px;
+        
+        li {
+          align-self: center;
+          font-family: $sspBold;
+          font-size: 12px;
+        }
+      }
+
+      img {
+        align-self: flex-end;
+        width: 4%;
+        height: 100%;
+      }
+    }
+
+  }
+}
